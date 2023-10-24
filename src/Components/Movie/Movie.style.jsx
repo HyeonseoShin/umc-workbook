@@ -26,12 +26,12 @@ const contain = styled.div`
     position: relative;
 `;
 
-const app-container = styled.div`
+/*const app-container = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: baseline;
-`;
+`;*/
 
 const image = styled.div`
     width: 100%;
@@ -72,7 +72,7 @@ const inform = styled.div`
     text-overflow: ellipsis;
 `;
 
-const inform b = styled.div`
+const b = styled.div`
     margin-top: 10px;
     margin-bottom: 10px;
 `;
