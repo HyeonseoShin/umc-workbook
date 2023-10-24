@@ -28,8 +28,7 @@ code {
   position: relative;
 }*/
 
-.app-container
-{
+.app-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
