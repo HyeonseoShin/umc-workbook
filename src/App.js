@@ -1,5 +1,12 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Components from 'c:/Users/user/Document/umc-workbook/src/Components'
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Components from 'C:/Users/user/Document/umc-workbook/src/Components';
+import Home from './pages/Home';
+import Celebirity from './pages/Celebirity';
+import TV from './pages/TV';
+import NotFound from './pages/NotFound';
+import Movie from './Components/Movie';
+import {movies} from './movieDummy';
 
 function App() {
   return (

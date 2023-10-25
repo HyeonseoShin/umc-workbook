@@ -1,5 +1,5 @@
 import React from "react";
-import Ad from "./Ad";
+import Ad from "C:/Users/user/Desktop/umc-workbook/src/Components/Ad";
 
 export default function Home()
 {
