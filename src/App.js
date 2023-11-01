@@ -1,12 +1,13 @@
-import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Components from 'C:/Users/user/Document/umc-workbook/src/Components';
-import Home from './pages/Home';
-import Celebirity from './pages/Celebirity';
-import TV from './pages/TV';
-import NotFound from './pages/NotFound';
-import Movie from './Components/Movie';
-import {movies} from './movieDummy';
+import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Header from './pages/Header'
+import Home from './pages/Home'
+import Celebirity from './pages/Celebirity'
+import TV from './pages/TV'
+import NotFound from './pages/NotFound'
+import Movie from './Components/Movie'
+import { movies } from './movieDummy'
+import { isHtmlElement } from 'react-router-dom/dist/dom'
 
 function App() {
   return (
@@ -17,7 +18,22 @@ function App() {
         //A{' '}
         <Routes>
           {' '}
-          //B <Route path="./Desktop/umc-workbook" element={Components} />{' '}
+          //B <Route path="./Desktop/umc-workbook" element={<Home />} />{' '}
+          <Route>
+            path="/Movie" element=
+            {
+              <Movie
+                poster_path={isHtmlElement.poster_path}
+                title={isHtmlElement.title}
+                vote_average={isHtmlElement.vote_average}
+                overview={isHtmlElement.overview}
+                key={isHtmlElement.id}
+              />
+            }
+          </Route>
+          <Route>path="/celebirity" element={<Celebirity />}</Route>
+          <Route>path="/tv" element={<TV />}</Route>
+          <Route>path="*" element={<NotFound />}</Route>
         </Routes>{' '}
       </BrowserRouter>{' '}
     </div>
