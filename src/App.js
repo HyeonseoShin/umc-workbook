@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Header from './pages/Header'
+//import Header from './pages/Header'
 import Home from './pages/Home'
 import Celebirity from './pages/Celebirity'
 import TV from './pages/TV'
