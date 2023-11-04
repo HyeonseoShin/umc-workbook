@@ -18,7 +18,7 @@ import Main from './pages/Main/Main'
 class Routes extends React.Component {
   render() {
     return (
-      <Router>
+      /*<Router>
         <Nav />
         <Switch>
           <Route exact path="/" Component={Login} />
@@ -26,7 +26,37 @@ class Routes extends React.Component {
           <Route exact path="/main" Component={Main} />
         </Switch>
         <Footer />
-      </Router>
+      </Router>*/
+
+      <div>
+        style=
+        {{
+          display: 'flex',
+          padding: '10vw',
+        }}
+        <Link to="/">
+          <img
+            style={{ width: '20vw', height: '5vb', marginLeft: '20vw' }}
+            src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg"
+            alt="logo"
+          ></img>
+        </Link>
+        <Link
+          to="/movie"
+          style={{ margin: '0px 10px 0px 3vw', textDecoration: 'none' }}
+        >
+          Movie
+        </Link>
+        <Link to="/tv" style={{ margin: '0 5vw', textDecoration: 'nonr' }}>
+          TV
+        </Link>
+        <Link
+          to="/celebirty"
+          style={{ margin: '0 5vw', textDecoration: 'none' }}
+        >
+          Celebirty
+        </Link>
+      </div>
     )
   }
 }
