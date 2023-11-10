@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Login from "./Login";
+import Login from "./LoginControl";
+import LoginControl from "./LoginControl";
 
 /*export default function Header()
 {
@@ -89,8 +90,8 @@ class Routes extends React.Component {
           Celebirty
         </any>
 
-        <Login>
-        </Login>
+        <LoginControl>
+        </LoginControl>
       </div>
     )
   }
