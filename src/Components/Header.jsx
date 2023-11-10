@@ -15,6 +15,7 @@ import Login from './pages/Login/Login'
 import Signup from './pages/Signup/Signup'
 import Main from './pages/Main/Main'*/
 
+// eslint-disable-next-line no-undef
 class Routes extends React.Component {
   render() {
     return (

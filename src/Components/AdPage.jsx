@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 export default class Page extends React.Component
 {
     constructor(props)
