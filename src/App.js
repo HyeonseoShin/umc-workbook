@@ -19,8 +19,7 @@ function App() {
         <Routes>
           {' '}
           //B <Route path="./Desktop/umc-workbook" element={<Home />} />{' '}
-          <Route>
-            path="/Movie" element=
+          <Route path="/Movie" element=
             {
               <Movie
                 poster_path={isHtmlElement.poster_path}
@@ -29,11 +28,12 @@ function App() {
                 overview={isHtmlElement.overview}
                 key={isHtmlElement.id}
               />
-            }
+            }>
           </Route>
-          <Route>path="/celebirity" element={<Celebirity />}</Route>
-          <Route>path="/tv" element={<TV />}</Route>
-          <Route>path="*" element={<NotFound />}</Route>
+          <Route path="/celebirity" element={<Celebirity />}></Route>
+          <Route path="/tv" element={<TV />}></Route>
+          <Route path="*" element={<NotFound />}></Route>
+          <Route path = "/movies" element = {<movies></movies>}></Route>
         </Routes>{' '}
       </BrowserRouter>{' '}
     </div>

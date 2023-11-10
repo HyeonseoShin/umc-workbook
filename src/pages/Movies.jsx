@@ -4,6 +4,12 @@ import * as A from './Movie.style'
 
 const domain = 'https://image.tmdb.org/t/p/w1280/'
 
+/*const Movie = () => {
+  return <h1>
+    영화
+  </h1>;
+};*/
+
 function Movie({ title, vote_average, poster_path, overview }) {
   const t = { display: 'block' }
   const f = { display: 'none' }

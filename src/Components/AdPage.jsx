@@ -21,9 +21,9 @@ export default class Page extends React.Component
     {
         return (
             <div>
-                <Ad>
+                <any>
                     clicktf = {this.state.click}
-                </Ad>
+                </any>
 
                 <button onClick = {this.handleToggleClick} > 
                 {
