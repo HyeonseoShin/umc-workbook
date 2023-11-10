@@ -1,3 +1,34 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import Login from "./Login";
+
+/*export default function Header()
+{
+  return (
+    <div >  
+      <Link to = "/">
+        <img src = "https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg" alt="logo">
+
+        </img>
+      </Link>
+      <Link to = "/movie">
+        영화
+      </Link>
+
+      <Link to = "/tv">
+        TV 프로그램
+      </Link>
+
+      <Link to = "/celebrity">
+        인물
+      </Link>
+      
+      <Login>
+      </Login>
+    </div>
+  )
+}*/
+
 ;<img
   style={{
     width: '154px',
@@ -57,6 +88,9 @@ class Routes extends React.Component {
         >
           Celebirty
         </any>
+
+        <Login>
+        </Login>
       </div>
     )
   }

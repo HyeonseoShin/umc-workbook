@@ -21,19 +21,26 @@ function App() {
           //B <Route path="./Desktop/umc-workbook" element={<Home />} />{' '}
           <Route path="/Movie" element=
             {
-              <Movie
-                poster_path={isHtmlElement.poster_path}
-                title={isHtmlElement.title}
-                vote_average={isHtmlElement.vote_average}
-                overview={isHtmlElement.overview}
-                key={isHtmlElement.id}
-              />
+              <div className="app-container">
+                {
+                  movies.returns.map((item) => {
+                    return(
+                      <Movie
+                      poster_path={isHtmlElement.poster_path}
+                      title={isHtmlElement.title}
+                      vote_average={isHtmlElement.vote_average}
+                      overview={isHtmlElement.overview}
+                      key={isHtmlElement.id}
+                      />
+                    )
+                  })
+                }
+              </div>
             }>
           </Route>
           <Route path="/celebirity" element={<Celebirity />}></Route>
           <Route path="/tv" element={<TV />}></Route>
           <Route path="*" element={<NotFound />}></Route>
-          <Route path = "/movies" element = {<movies></movies>}></Route>
         </Routes>{' '}
       </BrowserRouter>{' '}
     </div>

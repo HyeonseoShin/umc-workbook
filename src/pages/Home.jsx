@@ -11,8 +11,9 @@ export default function Home()
 {
     return (
         <div>
+            <Ad>
             Home
-            <Ad />
+            </Ad>
         </div>
     );
 }
