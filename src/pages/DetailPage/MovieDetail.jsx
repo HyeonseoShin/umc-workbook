@@ -14,5 +14,5 @@ export default function MovieDetail()
     console.log(title);
     console.log(state);
 
-    return();
+    return(title,state);
 }
