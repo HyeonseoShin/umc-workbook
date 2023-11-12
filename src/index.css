@@ -28,6 +28,11 @@ code {
   position: relative;
 }*/
 
+
+body {
+  background-color: aqua;
+}
+
 .app-container {
   display: flex;
   flex-wrap: wrap;

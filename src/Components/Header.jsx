@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import Login from "./LoginControl";
 import LoginControl from "./LoginControl";
 
-/*export default function Header()
+export default function Header()
 {
   return (
-    <div >  
+    /*<div >  
       <Link to = "/">
         <img src = "https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg" alt="logo">
 
@@ -26,9 +26,75 @@ import LoginControl from "./LoginControl";
       
       <Login>
       </Login>
-    </div>
+    </div>*/
+
+    <>
+      /*<div >
+        <Link to = "/">
+          <img src = "https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg" alt="logo">
+      
+          </img>
+        </Link>
+        <Link to = "/movie">
+          영화
+        </Link>
+      
+        <Link to = "/tv">
+          TV 프로그램
+        </Link>
+      
+        <Link to = "/celebrity">
+          인물
+        </Link>
+        
+        <Login>
+        </Login>
+      </div>*/
+      <div
+        style={{
+          display: "flex", width: "100vW", alignItems: "center"
+        }}
+      >
+        <Link to="/">
+          <img
+            style={{
+              width: "20vw", height: "5vh", marginLeft: "10vw"
+            }}
+
+            src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg"
+
+            alt="logo" />
+        </Link>
+
+        <Link
+          to="/movie"
+          style={{
+            margin: "1vw", textDecoration: "none"
+          }}
+        >
+        </Link>
+
+        <Link
+          to="tv" style={{
+            margin: "1vw".textDecoration
+          }} /> : "none"
+        {"}"}
+        &rbrace;
+          TV 프로그램
+        </div>
+
+        <Link
+        to="/celebirity"
+        style={{
+          margin: "1vw", textDecoration: "none"
+        }}
+        >
+        인물
+      </Link><Login>
+      </Login><LoginControl>
+      </LoginControl></>
   )
-}*/
+}
 
 ;<img
   style={{
@@ -92,9 +158,12 @@ class Routes extends React.Component {
 
         <LoginControl>
         </LoginControl>
+
+        <Login>
+        </Login>
       </div>
     )
   }
 }
 
-export default Routes
+// export default Routes

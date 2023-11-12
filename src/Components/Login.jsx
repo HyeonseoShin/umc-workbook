@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useState } from 'react';
 
 class Login extends React.Component {
   constructor(props) {
@@ -19,6 +20,43 @@ class Login extends React.Component {
       </div>
     )
   }
+}
+
+function Login()
+{
+  const [isLoggedIn, setisLoggedIn] = useState(false);
+
+  const handleLogin = () => {
+    setisLoggedIn(!isLoggedIn);
+  };
+
+  return(
+    <div
+      style={
+        {
+          color : "white"
+        }
+      }
+    >
+      <p>
+        <button
+          style={
+            {
+              margin : "1vw", borderRadius : "20px", width : "5vw", height : "5vh"
+            }
+          }
+        
+          onClick={handleLogin}
+        >
+          {
+            isLoggedIn ? "Log-out" : "Log-in"
+          }
+        </button>
+
+          {isLoggedIn ? "Welcome!" : "Login!"}
+      </p>
+    </div>
+  )
 }
 
 export default Login

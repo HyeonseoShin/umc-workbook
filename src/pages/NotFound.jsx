@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 /*const NotFound = () => {
     return <h1>
@@ -8,7 +9,36 @@ import React from "react";
 
 export default function NotFound()
 {
-    return <div>
-        Not Found
-        </div>;
+    const navigate = useNavigate();
+    const onClicking = () => {
+        navigate('/',{});
+    };
+
+    return (
+        <div style={
+                {
+                    margin : "5vw"
+                }
+            }
+        >
+            <h1>
+                Cannot Find the Adress!
+            </h1>
+
+            <p>
+                Wrong Adress
+            </p>
+
+            <p>
+                Page Not Available
+            </p>
+
+            <b onClick = {
+                onClickImg
+                }
+            >
+                Main Page
+            </b>
+        </div>
+    );
 }

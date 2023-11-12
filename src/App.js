@@ -7,6 +7,7 @@ import TV from './pages/TV'
 import NotFound from './pages/NotFound'
 import Movie from './Components/Movie'
 import { movies } from './movieDummy'
+import MovieDetail from './pages/DetailPage/MovieDetail'
 import { isHtmlElement } from 'react-router-dom/dist/dom'
 
 function App() {
@@ -26,11 +27,11 @@ function App() {
                   movies.returns.map((item) => {
                     return(
                       <Movie
-                      poster_path={isHtmlElement.poster_path}
-                      title={isHtmlElement.title}
-                      vote_average={isHtmlElement.vote_average}
-                      overview={isHtmlElement.overview}
-                      key={isHtmlElement.id}
+                      poster_path={item.poster_path}
+                      title={item.title}
+                      vote_average={item.vote_average}
+                      overview={item.overview}
+                      key={item.id}
                       />
                     )
                   })
@@ -38,9 +39,26 @@ function App() {
               </div>
             }>
           </Route>
-          <Route path="/celebirity" element={<Celebirity />}></Route>
-          <Route path="/tv" element={<TV />}></Route>
-          <Route path="*" element={<NotFound />}></Route>
+          <Route to="/celebirity" element={<Celebirity />}>
+          </Route>
+
+          <Route to="/tv" element={<TV />}>
+          </Route>
+
+          <Route path={
+            '/movie/:title'
+          }
+          element = {
+          <MovieDetail>
+          </MovieDetail>
+          }>
+          </Route>
+
+          <Route path="/*" element={
+          <NotFound>
+          </NotFound>
+          }>
+          </Route>
         </Routes>{' '}
       </BrowserRouter>{' '}
     </div>
