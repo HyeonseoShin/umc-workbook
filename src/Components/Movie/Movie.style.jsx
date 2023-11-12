@@ -82,6 +82,7 @@ export const b = styled.div`
 export const component = styled.div`
   width : 170px;
   margin : 7px;
+  background-color : #ffffff;
   border-radius : 5px;
   margin-bottom : 15px;
   margin-top : 20px;
@@ -91,6 +92,7 @@ export const component = styled.div`
 export const movie_img = styled.div`
   width : 150px;
   margin : 7px;
+  background-color : #373737;
   border-radius : 5px;
   margin-bottom : 15px;
   margin-top : 20px;
@@ -105,6 +107,7 @@ export const movie_info = styled.div`
   margin-left : 15px;
   margin-top : 10px;
   matgin-bottom : 15px;
+  color : #ffffff;
 `
 
 export const hide_info = styled.div`
@@ -112,10 +115,12 @@ export const hide_info = styled.div`
   position : absolute;
   top : 0px;
   left : 0px;
+  color : #d6d6d6;
   padding-left : 5px;
   padding-right : 5px;
-  height : 100%
+  height : 100%;
   border-radius : 0 0 5px 5px;
+  background-color : rgba(0, 0, 0, 0.7);
   overflow : hidden;
   text-overflow : ellipsis;
 `
