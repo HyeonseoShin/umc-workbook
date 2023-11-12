@@ -1,6 +1,6 @@
 //import { useState } from "react";
 import React, { useState } from 'react'
-import * as A from './Movie.style'
+import * as A from 'C:/Users/user/Desktop/umc-workbook/src/Components/Movie/Movie.style'
 
 const domain = 'https://image.tmdb.org/t/p/w1280/'
 
@@ -24,7 +24,7 @@ function Movie({ title, vote_average, poster_path, overview }) {
 
   return (
     <A.component onMouseOver={MouseIn} onMouseOut={MouseOut}>
-      <A.mouse_img>
+      <A.movie_img>
         <A.img src={domain + poster_path} alt={title}></A.img>
 
         <A.movie_info>
@@ -32,7 +32,7 @@ function Movie({ title, vote_average, poster_path, overview }) {
 
           <span>{vote_average}</span>
         </A.movie_info>
-      </A.mouse_img>
+      </A.movie_img>
       <A.hide_info style={tf ? t : f}>
         <b>{title}</b>
 

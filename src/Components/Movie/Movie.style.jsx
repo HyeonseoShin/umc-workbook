@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const body = styled.div`
+export const body = styled.div`
   margin: 0;
   background-color: black;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,12 +11,12 @@ const body = styled.div`
   -moz-osx-font-smoothing: grayscale;
 `
 
-const code = styled.div`
+export const code = styled.div`
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 `
 
-const contain = styled.div`
+export const contain = styled.div`
   margin: 7px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -35,11 +35,11 @@ const contain = styled.div`
     align-items: baseline;
 `;*/
 
-const image = styled.div`
+export const image = styled.div`
   width: 100%;
 `
 
-const text = styled.div`
+export const text = styled.div`
   height: 50px;
   font-size: 13px;
   display: flex;
@@ -55,7 +55,7 @@ const text = styled.div`
   color: white;
 `
 
-const inform = styled.div`
+export const inform = styled.div`
   display: block;
 
   top: 0px;
@@ -74,7 +74,48 @@ const inform = styled.div`
   text-overflow: ellipsis;
 `
 
-const b = styled.div`
+export const b = styled.div`
   margin-top: 10px;
   margin-bottom: 10px;
+`
+
+export const component = styled.div`
+  width : 170px;
+  margin : 7px;
+  border-radius : 5px;
+  margin-bottom : 15px;
+  margin-top : 20px;
+  position : relative;
+`
+
+export const movie_img = styled.div`
+  width : 150px;
+  margin : 7px;
+  border-radius : 5px;
+  margin-bottom : 15px;
+  margin-top : 20px;
+  position : relative;
+`
+
+export const img = styled.div`
+  width : 150px;
+`
+
+export const movie_info = styled.div`
+  margin-left : 15px;
+  margin-top : 10px;
+  matgin-bottom : 15px;
+`
+
+export const hide_info = styled.div`
+  display : block;
+  position : absolute;
+  top : 0px;
+  left : 0px;
+  padding-left : 5px;
+  padding-right : 5px;
+  height : 100%
+  border-radius : 0 0 5px 5px;
+  overflow : hidden;
+  text-overflow : ellipsis;
 `
